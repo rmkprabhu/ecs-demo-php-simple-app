@@ -1,46 +1,29 @@
 {
-    "executionRoleArn": "arn:aws:iam::965852169031:role/ecs-task-test-role-prabhu",
     "containerDefinitions": [
         {
-            "dnsSearchDomains": null,
-            "logConfiguration": null,
-            "entryPoint": null,
             "portMappings": [
                 {
-                    "hostPort": 82,
+                    "hostPort": 7002,
                     "protocol": "tcp",
                     "containerPort": 80
                 }
             ],
-            "command": null,
-            "linuxParameters": null,
+
             "cpu": 0,
             "environment": [],
-            "ulimits": null,
-            "dnsServers": null,
+
             "mountPoints": [],
-            "workingDirectory": null,
-            "dockerSecurityOptions": null,
+
             "memory": 128,
-            "memoryReservation": null,
+
             "volumesFrom": [],
-            "image": "wordpress",
-            "disableNetworking": null,
-            "healthCheck": null,
-            "essential": true,
-            "links": null,
-            "hostname": null,
-            "extraHosts": null,
-            "user": null,
-            "readonlyRootFilesystem": null,
-            "dockerLabels": null,
-            "privileged": null,
-            "name": "wordpress"
+            "image": "965852169031.dkr.ecr.us-east-1.amazonaws.com/prabhu-ecs-test:latest",
+            "name": "new-cicd-build"
         }
     ],
     "memory": "512",
     "taskRoleArn": "arn:aws:iam::965852169031:role/ecs-task-test-role-prabhu",
-    "family": "wordpress",
+    "family": "new-cicd-ecs",
     "requiresCompatibilities": [
         "EC2"
     ],
