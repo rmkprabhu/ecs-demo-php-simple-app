@@ -10,7 +10,7 @@
         {
             "environment": [],
             "name": "simple-app",
-            "image": "965852169031.dkr.ecr.us-east-1.amazonaws.com/prabhu-ecs-test:latest",
+            "image": "prabhu-ecs-test/latest",
             "cpu": 10,
             "memory": 500,
             "portMappings": [
