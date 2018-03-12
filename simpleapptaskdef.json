@@ -1,5 +1,6 @@
 {
     "family": "console-sample-app",
+    "taskRoleArn": "arn:aws:iam::965852169031:role/ecs-task-test-role-prabhu",
     "volumes": [
         {
             "name": "my-vol",
@@ -10,7 +11,7 @@
         {
             "environment": [],
             "name": "simple-app",
-            "image": "prabhu-ecs-test/latest",
+            "image": "965852169031.dkr.ecr.us-east-1.amazonaws.com/prabhu-ecs-test:latest",
             "cpu": 10,
             "memory": 500,
             "portMappings": [
