@@ -3,7 +3,7 @@
         {
             "portMappings": [
                 {
-                    "hostPort": 7002,
+                    "hostPort": 7010,
                     "protocol": "tcp",
                     "containerPort": 80
                 }
@@ -23,7 +23,7 @@
     ],
     "memory": "512",
     "taskRoleArn": "arn:aws:iam::965852169031:role/ecs-task-test-role-prabhu",
-    "family": "new-cicd-ecs",
+    "family": "new-cicd-ecs3",
     "requiresCompatibilities": [
         "EC2"
     ],
